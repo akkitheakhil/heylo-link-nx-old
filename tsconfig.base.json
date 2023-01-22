@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@heylo-link/backend/short-links": [
+        "libs/backend/short-links/src/index.ts"
+      ],
+      "@heylo-link/common/heylo-utilities": [
+        "libs/common/heylo-utilities/src/index.ts"
+      ],
+      "@heylo-link/frontend/heylo-ui-components": [
+        "libs/frontend/heylo-ui-components/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

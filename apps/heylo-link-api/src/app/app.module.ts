@@ -1,11 +1,9 @@
+import { ShortLinksModule } from '@heylo-link/backend/short-links';
 import { Module } from '@nestjs/common';
 
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [ShortLinksModule],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
