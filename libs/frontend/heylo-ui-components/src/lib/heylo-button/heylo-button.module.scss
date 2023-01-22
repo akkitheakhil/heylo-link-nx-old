@@ -5,11 +5,12 @@
   box-shadow: 4px 4px 0px #000000;
   width: 100%;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 28px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
   &:after {
     content: '';
     display: block;
