@@ -1,14 +1,5 @@
 {
   "projects": {
-    "heylo-api-short-links": {
-      "type": "library",
-      "root": "libs/heylo-api-short-links",
-      "entryFile": "index",
-      "sourceRoot": "libs/heylo-api-short-links/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/heylo-api-short-links/tsconfig.lib.json"
-      }
-    }
   },
   "compilerOptions": {
     "webpack": true
