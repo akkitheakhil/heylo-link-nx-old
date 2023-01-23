@@ -47,6 +47,11 @@ export function Index() {
          <pre> <HeyloHref text={`${process.env.NEXT_PUBLIC_APP_HOST}${data.slug}`} href={data.slug} />  </pre>
         </div>}
 
+        {error && <div className={styles['terminal']}>
+         <pre> Please enter a valid input  </pre>
+        </div>}
+
+
         <h3 className={styles['sub-title']}>
           Want to create custom short URLs and personal landing page?
         </h3>
