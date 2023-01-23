@@ -1,3 +1,4 @@
+export * from './lib/heylo-snackbar/heylo-snackbar';
 export * from './lib/heylo-screen-loader/heylo-screen-loader';
 export * from './lib/heylo-loader/heylo-loader';
 export * from './lib/heylo-button/heylo-button';

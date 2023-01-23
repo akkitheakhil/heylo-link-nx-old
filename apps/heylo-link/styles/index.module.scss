@@ -71,15 +71,12 @@
   background-color: white;
   cursor: pointer;
   border: 4px solid black;
+  font-family: var(--secondary-font) !important;
   pre {
-    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-family: var(--secondary-font) !important;
     color: black;
     padding: 0 1rem 1rem;
     margin: 0;
-
-    &.error {
-      color: red;
-    }
   }
 
   &::before {
