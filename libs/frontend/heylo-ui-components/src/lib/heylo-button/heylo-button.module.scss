@@ -30,6 +30,7 @@
 
   &:active {
     transform: translate(1px, 1px);
+    box-shadow: 0px 0px 0px #000000;
   }
 
   &:active:after {
