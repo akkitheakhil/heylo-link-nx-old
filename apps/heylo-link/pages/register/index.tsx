@@ -1,5 +1,5 @@
 import { HeyloButton } from '@heylo-link/frontend/heylo-ui-components';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import styles from '../../styles/register.module.scss';
 
 export default function RegisterPage() {

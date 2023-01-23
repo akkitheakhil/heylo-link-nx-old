@@ -4,9 +4,10 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Heylo-link",
-    "short_name": "heylo",
+    "name": "Heylo link - Short URLs and Landing Page",
+    "short_name": "Heylo Link",
     "description": "Simple, Easy to use, Short URLs and personal landing pages",
+    "orientation": "portrait",
     "icons": [
         {
             "src": "/icon-192x192.png",

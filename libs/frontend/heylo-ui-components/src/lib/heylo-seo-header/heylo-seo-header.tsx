@@ -44,6 +44,10 @@ export function HeyloSEOHeader({
         sizes="32x32"
         href="/favicon-32x32.png"
       />
+      <link rel="icon" href="./images/favicon.ico" />
+      <link rel="manifest" href="/manifest.json" />
+      <link rel="apple-touch-icon" href="/icon.png"></link>
+      <meta name="theme-color" content="#F2F2F2" />
       <link
         rel="icon"
         type="image/png"

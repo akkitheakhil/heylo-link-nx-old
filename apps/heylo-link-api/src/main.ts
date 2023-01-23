@@ -23,17 +23,20 @@ async function bootstrap() {
     })
   );
 
-  app.enableCors({});
+  app.enableCors();
 
-  const config = new DocumentBuilder()
-    .setTitle('Heylo Link API')
-    .setDescription('This is API for heylo-link')
-    .setVersion('1.0')
-    .addBearerAuth()
-    .build();
+  if (process.env.NODE_ENV !== 'PRODUCTION') {
+    const config = new DocumentBuilder()
+      .setTitle('Heylo Link API')
+      .setDescription('This is API for heylo-link')
+      .setVersion('1.0')
+      .addBearerAuth()
+      .build();
 
-  const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('swagger', app, document);
+    const document = SwaggerModule.createDocument(app, config);
+    SwaggerModule.setup('swagger', app, document);
+  }
+
   const port = SERVER_PORT ?? 8080;
   await app.listen(port, '0.0.0.0');
 }

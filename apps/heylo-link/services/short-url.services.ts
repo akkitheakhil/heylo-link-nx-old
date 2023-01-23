@@ -1,6 +1,6 @@
+import { API_ENDPOINTS } from '../constants/http-url.constants';
+import httpClient from '../lib/axios';
 import { ShortLink } from '../models/short-link.model';
-import httpClient from './axios';
-import { API_ENDPOINTS } from './http-url-const';
 
 export const createNewShortLink = (url: string): Promise<ShortLink> => {
   const body = {

@@ -7,10 +7,10 @@ import {
   HeyloLogo,
   HeyloSnackbar,
 } from '@heylo-link/frontend/heylo-ui-components';
-import { createNewShortLink } from '../lib/api-services';
+import { createNewShortLink } from '../services/short-url.services';
 import { useMutation } from '@tanstack/react-query';
 import { useRef, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 export function Index() {
   const router = useRouter();

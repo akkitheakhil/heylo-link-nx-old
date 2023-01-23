@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import { getShortLink } from '../../lib/api-services';
-import { useRouter } from 'next/router'
+import { getShortLink } from '../../services/short-url.services';
+import { useRouter } from 'next/navigation';
 import { HeyloScreenLoader } from '@heylo-link/frontend/heylo-ui-components';
 import { addHttpPrefix, isDataNotEmpty } from '@heylo-link/common/heylo-utilities';
 
