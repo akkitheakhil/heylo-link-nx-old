@@ -27,7 +27,7 @@ export function Index() {
     <div className={styles['container']}>
       <div className={styles['header']}>
         <HeyloLogo text="Heylo Link" />
-        <HeyloHref fontSize='24px' href="/register" text="Register" />
+        <HeyloHref fontSize='24px' href="/register" text="Register" target={'_self'} />
       </div>
       <div className={styles['main-content']}>
         <h1 className={styles['title']}> Short URLs and Landing pages </h1>
@@ -44,7 +44,7 @@ export function Index() {
 
 
         {data?.slug && <div className={styles['terminal']}>
-         <pre> <HeyloHref text={`${process.env.NEXT_PUBLIC_APP_HOST}${data.slug}`} href={data.slug} />  </pre>
+         <pre> <HeyloHref text={`${process.env.NEXT_PUBLIC_APP_HOST}${data.slug}`} href={data.slug} target={'_blank'} />  </pre>
         </div>}
 
         {error && <div className={styles['terminal']}>
