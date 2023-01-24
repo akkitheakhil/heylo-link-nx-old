@@ -89,9 +89,9 @@ export function Index() {
             </div>
           )}
 
-          <h3 className={styles['sub-title']}>
+          <p className={styles['sub-title']}>
             Want to create custom short URLs and personal landing page?
-          </h3>
+          </p>
           <div className={styles['action']}>
             <HeyloButton
               width="248px"
